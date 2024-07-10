@@ -29,6 +29,7 @@ VALUES
 INSERT INTO shirt (article, color, size, worn)
 VALUES ('polo shirt', 'purple', 'M', 50);
 
+
 -- Select all shirts and print out only article and color
 SELECT article, color FROM shirt;
 
