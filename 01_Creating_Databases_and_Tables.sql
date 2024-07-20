@@ -9,8 +9,7 @@ SHOW DATABASES;
 -- Change the current database to the specified one
 USE <database_name>;
 
--- Verify the current database in use
-SELECT DATABASE();
+-- Verify the current database in use SELECT DATABASE();
 
 -- Table Operations
 
