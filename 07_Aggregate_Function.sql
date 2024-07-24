@@ -70,7 +70,19 @@ SELECT CONCAT(author_fname," ",author_lname) AS author,COUNT(*) FROM books GROUP
 
 --Min/Max with Group By
 --Find the year each author published their first book
-SELECT author_fname, author_lname,COUNT(*) AS bookWritten,Max(released_year) AS latestRelease, Min(released_year) AS earliestRelease,MAX(pages) AS longestPageCount FROM   books GROUP  BY author_lname, author_fname; 
+SELECT 
+    author_fname, 
+    author_lname,
+    COUNT(*) AS bookWritten,
+    MAX(released_year) AS latestRelease, 
+    MIN(released_year) AS earliestRelease,
+    MAX(pages) AS longestPageCount 
+FROM 
+    books 
+GROUP BY 
+    author_lname, 
+    author_fname;
+
 --Group Formed , Min/Max within group
 
 -- +--------------+----------------+-------------+---------------+-----------------+------------------+
