@@ -51,6 +51,7 @@ CREATE TABLE partiers2 (
     CONSTRAINT age_over_18 CHECK (age > 18)
 );
 
+
  -- Attempt to insert an invalid record into the 'partiers2' table
  INSERT INTO partiers2 (name, age) VALUES ('Bob', 17);
 --Check constraint 'age_over_18' is violated.
