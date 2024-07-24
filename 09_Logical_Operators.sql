@@ -113,5 +113,6 @@ FROM books;
 -- +-----------------------------------------------------+----------------+-------+
 -- | The Namesake                                        |             32 | *     |
 
+
 --IS NULL , IS NOT NULL 
 SELECT * FROM books WHERE title IS NULL;
